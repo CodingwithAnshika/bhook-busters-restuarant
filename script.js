@@ -50,3 +50,25 @@ function handleContactFormSubmit(event) {
   alert('Thank you for your message! We will get back to you soon.');
   event.target.reset(); // Reset the form
 }
+
+//resservation section
+    document.addEventListener('DOMContentLoaded', function () {
+      const reservationForm = document.getElementById('reservationForm');
+      const popupMessage = document.getElementById('popupMessage');
+      const closePopupBtn = document.querySelector('#popupMessage .popup-content button');
+    
+      reservationForm.addEventListener('submit', function (event) {
+        event.preventDefault(); // Prevent the form from submitting normally
+    
+        // Show the popup
+        popupMessage.style.display = 'flex';
+      });
+    
+      closePopupBtn.addEventListener('click', function () {
+        // Hide the popup
+        popupMessage.style.display = 'none';
+    
+        // Reset the form after closing the popup
+        reservationForm.reset();
+      });
+    });

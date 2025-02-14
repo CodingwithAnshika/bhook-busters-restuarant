@@ -43,7 +43,15 @@ document.addEventListener("DOMContentLoaded", function () {
       fadeInOnScroll();
     });
   
-    //resservation section
+    
+// Handle contact form submission
+function handleContactFormSubmit(event) {
+  event.preventDefault(); // Prevent the form from submitting normally
+  alert('Thank you for your message! We will get back to you soon.');
+  event.target.reset(); // Reset the form
+}
+
+//resservation section
     document.addEventListener('DOMContentLoaded', function () {
       const reservationForm = document.getElementById('reservationForm');
       const popupMessage = document.getElementById('popupMessage');
@@ -64,10 +72,3 @@ document.addEventListener("DOMContentLoaded", function () {
         reservationForm.reset();
       });
     });
-
-// Handle contact form submission
-function handleContactFormSubmit(event) {
-  event.preventDefault(); // Prevent the form from submitting normally
-  alert('Thank you for your message! We will get back to you soon.');
-  event.target.reset(); // Reset the form
-}

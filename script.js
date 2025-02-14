@@ -44,3 +44,9 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   
 
+// Handle contact form submission
+function handleContactFormSubmit(event) {
+  event.preventDefault(); // Prevent the form from submitting normally
+  alert('Thank you for your message! We will get back to you soon.');
+  event.target.reset(); // Reset the form
+}

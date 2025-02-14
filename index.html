@@ -204,8 +204,56 @@
     <button type="submit">Send Message</button>
   </form>
 </section>
-
-
+<!--resevation section-->
+<section class="reservation-section" id="reservation">
+        <h2 >Reserve Your Table</h2>
+        <p>Enjoy an unforgettable dining experience at Bhook Busters. Reserve your table today and let us make your visit special.
+        </p>
+        <div class="reservation-container">
+          <div class="reservation-image">
+            <img src="assests/host5.jpg.png" alt="Restaurant Interior">
+          </div>
+          <div class="reservation-form-wrapper">
+            <form class="reservation-form" id="reservationForm" >
+              <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+              </div>
+              <div class="form-group">
+                <label for="datetime">Date & Time</label>
+                <input type="datetime-local" id="datetime" name="datetime" required>
+              </div>
+              <div class="form-group">
+                <label for="guests">Number of Guests</label>
+                <input type="number" id="guests" name="guests" min="1" max="20" placeholder="Number of guests" required>
+              </div>
+              <div class="form-group">
+                <label for="message">Special Requests</label>
+                <textarea id="message" name="message" rows="3" placeholder="Any special requests..."></textarea>
+              </div>
+              <button type="submit" class="reserve-button" >Reserve Now</button>
+            </form>
+            
+        </div>
+      </div>
+          </div>
+        </div>
+        <!-- Confirmation Popup -->
+      <div class="popup-message" id="popupMessage">
+        <div class="popup-content">
+          <p>Thank you! Your reservation is confirmed.</p>
+          <button type="button" id="closePopuptBtn">OK</button>
+      </div>
+    </div>
+</section>
 
       
     <script src="script.js"></script>

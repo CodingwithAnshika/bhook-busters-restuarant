@@ -523,10 +523,12 @@ header {
   }
 }
 
+/*host your event section*/
+
 .host{
   background-color: #fef6e4;
   padding: 80px 0 80px 0;
-  margin: 0 29px 0 29px ;
+  margin: 0 29px 40px29px ;
   text-align: center;
 }
 
@@ -556,17 +558,18 @@ header {
   overflow: hidden;
   border-radius: 8px;
   height: 200px;
+ 
 }
 
 .host-images img{
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: tranform 0.9s ease-in;
+  transition: transform 0.5s ease-out;
 }
 
 .host-images:hover img{
-  transform: scale(1.2);
+  transform: scale(0.9);
 }
 
 .host h3{
@@ -600,7 +603,6 @@ header {
   color: white;
 }
 
-
 /*responsive design*/
 @media (max-width: 768px) {
   .host-gallery{
@@ -617,7 +619,6 @@ header {
 .host-images{ height: 120px;}
 
 }
-
 /* Customer Reviews Section */
 .customer-reviews {
   background-color: black;

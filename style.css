@@ -569,6 +569,38 @@ header {
   transform: scale(1.2);
 }
 
+.host h3{
+  font-size: 2.5rem;
+  margin: 20px;
+  color: #382d2d;
+  padding-top: 40px;
+}
+
+.host-buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  padding-bottom: 60px;
+}
+
+.host-btn {
+  padding: 15px 25px;
+  background: transparent;
+  color: #8B0000;
+  border: 2px solid #8B0000;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: 0.3s;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.host-btn:hover {
+  background: #8B0000;
+  color: white;
+}
+
+
 /*responsive design*/
 @media (max-width: 768px) {
   .host-gallery{

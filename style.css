@@ -585,3 +585,68 @@ header {
 .host-images{ height: 120px;}
 
 }
+
+/* Customer Reviews Section */
+.customer-reviews {
+  background-color: black;
+  color: white;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.customer-reviews h2 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.customer-reviews p {
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+  color: #ccc;
+}
+
+.customer-reviews .reviews-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.review {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 350px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  color: black;
+}
+
+.review p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.review .customer-name {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.review .designation {
+  font-size: 0.9rem;
+  color: #777;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .customer-reviews h2 {
+    font-size: 2.5rem;
+  }
+
+  .review {
+    max-width: 100%;
+  }
+}

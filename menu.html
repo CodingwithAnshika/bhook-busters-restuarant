@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu - Bhook Busters</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    
+  /* Menu Page Styling */
+.menu-intro {
+    text-align: center;
+    margin: 50px auto;
+    color: #333;
+    padding: 15px 0;
+}
+
+.menu-intro h1 {
+    font-size: 2.8em;
+    color: #8B4513; 
+    padding: 20px 0;
+}
+
+.menu-intro p {
+    font-size: 1.8em;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.menu-categories {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.menu-categories a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #8B4513;
+    font-weight: bold;
+    transition: color 0.3s, background-color 0.3s, transform 0.3s;
+    border: solid 2px #8B4513;
+    padding: 5px 10px;
+    border-radius: 5px;
+
+  }
+
+.menu-categories a:hover {
+    color: #fff;
+    background-color: #8B4513;
+    
+  
+}
+
+.menu-section {
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.menu-section h2 {
+    font-size: 2.2em;
+    color: #8B4513;
+    border-bottom: 2px solid #A0522D;
+    padding-bottom: 5px;
+}
+
+.menu-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding-top: 60px;
+}
+
+.menu-card {
+    background-color: #fffaf0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    max-width: 250px;
+    transition: transform 0.5s ease, box-shadow 0.6s ease;
+}
+
+.menu-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.menu-card img {
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.menu-card h3 {
+    font-size: 1.5em;
+    color: #8B4513;
+    margin: 10px 0 5px;
+}
+
+.menu-card p {
+    color: #555;
+    font-size: 1em;
+}
+
+.menu-section .tagline{
+    text-align: center;
+    font-size: 1.7em;
+    font-style: italic;
+    color: #8a491be2;
+  font-weight: bold;
+    margin: 35px 0 10px 0;
+
+}
+.menu-closing-note  {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #fef5e7;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    font-family: 'poppins', sans-serif;
+    border: #5a3e2b solid 2px;
+}
+.menu-closing-note p{
+    font-size: 1.8em;
+    color: #5a3e2b;
+    font-style: italic;
+    line-height: 1.6;
+    max-width: 600px;
+    margin: 0 auto;
+    opacity: 0;
+    transform: translateY(10px);
+    animation: fadeInUp 1.2s ease-out forwards;
+    animation-delay: 0.8s;
+}
+@keyframes fadeInUp {
+    from{
+        opacity: 0;
+        transform: translateY(10px);}
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+    }
+
+.menu-closing-note p::after {
+    content: " 🍽"; /* Optional playful touch */
+    font-style: normal;
+}
+
+@media (max-width: 768px) {
+    .menu-categories a{
+      display: block;
+      margin: 10px 0;
+    }
+    }
+
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <h1 class="logo">Bhook Busters</h1>
+      <div class="hamburger">&#9776;</div>
+      <ul class="nav-links">
+        <li><a href="index.html#home">Home</a></li>
+        <li><a href="index.html#about">About Us</a></li>
+        <li><a href="index.html#menu" class="active">Menu</a></li>
+        <li><a href="index.html#contact">Contact Us</a></li>
+        <li><a href="index.html#reservation" class="btn-reserve">Reserve a Table</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Menu Page Content -->
+    <section class="menu-intro">
+        <h1>Explore Our Menu</h1>
+        <p>Welcome to our culinary journey! Explore our chef-curated delights below. And remember, this is just a sneak peek—visit Bhook Busters to uncover more flavors waiting for you!</p>
+    </section>
+
+    <!-- Category Links -->
+    <div class="menu-categories">
+        <a href="#starters">Starters</a>
+        <a href="#main-course">Main Course</a>
+        <a href="#desserts">Desserts</a>
+        <a href="#drinks">Drinks</a>
+        <a href="#chefs-special">Chef’s Special</a>
+    </div>
+
+    <!-- Menu Section Template -->
+    <section class="menu-section" id="starters">
+        <h2>Starters</h2>
+        <p class="tagline">-"Kickstart Your Bhook- Small plates, Big Flavors🍽️!</p>
+        <div class="menu-grid">
+            <div class="menu-card">
+                <img src="assests/starter1.jpg" alt="Starter Dish">
+                <h3>Crispy Spring Rolls</h3>
+                <p>Golden-fried rolls stuffed with fresh veggies.</p>
+            </div>
+            <div class="menu-card">
+                <img src="assests/starter2.jpg" alt="starter dish">
+                <h3>Cheesy Garlic Bread</h3>
+                <p>Warm Garlic bread topped with gooey melted cheese</p>
+            </div>
+
+            <div class="menu-card"><img src="assests/starter3.jpg" alt="starter dish">
+            <h3>Spicy Paneer Tikka</h3>
+            <p>Grilled paneer marinated in bold spices. </p>
+            </div>
+
+           <div class="menu-card"><img src="assests/starter4.jpg" alt="starter dish">
+        <h3>Crunchy Nacho Platter</h3>
+        <p>Nachos with salsa,jalanpenos & cheesy dip.</p>
+        </div>
+
+            <div class="menu-card"><img src="assests/starter5.jpg" alt="starter dish">
+                <h3>Honey Chilly Lotus Crisps</h3>
+                <p>Crispy lotus stems tossed in a sweet & spicy honey-chilly glaze, sparkled with sesame </p>
+            </div>  
+
+            <div class="menu-card"><img src="assests/starter6.jpg" alt="starter dish">
+            <h3>Peri Peri Fries Bucket</h3>
+            <p>Crispy fries dusted with fiery peri-peri seasoning & served with dips.</p>
+           </div>
+
+        <div class="menu-card"><img src="assests/starter7.jpg" alt="starter dish">
+            <h3>Dahi ke Sholey</h3>
+            <p><br>Crispy bread rolls stuffed with spiced yogurt filling.</p>
+        </div>
+
+        <div class="menu-card"><img src="assests/starter8.jpg" alt="starter dish">
+            <h3>Stuffed Mushroom Bombs </h3>
+            <p>Juicy mushrooms filled with cheese & herbs, lighty fried.</p>
+        </div>
+    
+        </div>
+    </section>
+
+    <section class="menu-section" id="main-course">
+        <h2>Main Course</h2>
+        <p class="tagline">-"Heartier, Happier - Meals That Hug Your Soul✨🍲"</p>
+        <div class="menu-grid">
+            <!-- Menu items here -->
+                <div class="menu-card">
+              <img src="assests/maincourse1.jpg" alt="Maincourse Dish1">
+              <h3>Butter Paneer Delight</h3>
+              <p>Soft paneer cubes in creamy tomato gravy</p>
+                </div>
+
+              <div class="menu-card">
+            <img src="assests/maincourse2.jpg" alt="Maincourse Dish2">
+            <h3>Grilled Chicken Feast</h3>
+            <p>Tender chicken grilled to perfection with herbs.</p>
+              </div>
+
+         <div class="menu-card">
+          <img src="assests/maincourse3.jpg" alt="Maincourse Dish3">
+          <h3>Veg Biryani Royace</h3>
+          <p>Basmati rice cooked with aromatic spices & veggies.</p>
+          </div>
+
+          <div class="menu-card">
+        <img src="assests/maincourse4.jpg" alt="Maincourse Dish4">
+        <h3>Creamy Alfredo Pasta </h3>
+        <p>Pasta in rich,creamy white sauce with veggies.</p>
+          </div>
+
+       <div class="menu-card">
+      <img src="assests/maincourse5.jpg" alt="Maincourse Dish5">
+      <h3>Homestyle Dal tadka</h3>
+      <p>Yellow lentils tempered with garlic & spices. </p>
+      </div>
+
+     <div class="menu-card">
+    <img src="assests/maincourse6.jpg" alt="Maincourse Dish6">
+    <h3>Smoky Tandoori chicken</h3>
+    <p>Char-grilled chicken marinated in bold spices.</p>
+      </div>
+
+    <div class="menu-card">
+  <img src="assests/maincourse7.jpg" alt="Maincourse Dish7">
+  <h3>Paneer Butter Frankie</h3>
+  <p>Soft roll filled with spicy paneer, onions & sauces.</p>
+      </div>
+
+    <div class="menu-card">
+  <img src="assests/maincourse8.jpg" alt="Maincourse Dish8">
+  <h3>Sizzling Veg Sizzler</h3>
+  <p>Grilled veggies, rice & sauces served hot on a sizzler plate.</p>
+    </div>
+
+        </div>
+    </section>
+
+    <section class="menu-section" id="desserts">
+        <h2>Desserts</h2>
+        <p class="tagline">-"Sweet Endings, Sweeter Memories- Indulge in a Symphony of Flavours🍫🍨!"</p>
+        <div class="menu-grid">
+            <!-- Menu items here -->
+            <div class="menu-card">
+              <img src="assests/dessert1.jpg" alt="Dessert">
+              <h3>Choco lava Bliss</h3>
+              <p>Warm chocolate cake with a molten choco center.</p>
+            </div>
+
+            <div class="menu-card">
+              <img src="assests/dessert2.jpg" alt="Dessert">
+              <h3>Rasmalai Royace </h3>
+              <p>Soft cheese dumplings soaked in saffron milk.</p>
+            </div>
+
+            <div class="menu-card">
+              <img src="assests/dessert3.jpg" alt="Dessert">
+              <h3>Fruity Custurd Delight </h3>
+              <p>Creamy Custurd topped with fresh fruits.</p>
+            </div>
+
+            <div class="menu-card">
+              <img src="assests/dessert4.jpg" alt="Dessert">
+              <h3>Classic Gulab Jamun</h3>
+              <p>Warm dumplings soaked in rose-flavoured sugar syrup.</p>
+            </div>
+
+            <div class="menu-card">
+              <img src="assests/dessert5.jpg" alt="Dessert">
+              <h3>Red Velvet Cupcake</h3>
+              <p>Soft red velvet cake topped with cream cheese frosting.</p>
+            </div>
+
+            <div class="menu-card">
+              <img src="assests/dessert6.jpg" alt="Dessert">
+              <h3>Mango Cheesecake Slice</h3>
+              <p>Creamy cheesecake layered with fresh mango pulp.</p>
+            </div>
+
+            <div class="menu-card">
+              <img src="assests/dessert7.jpg" alt="Dessert">
+              <h3>Sizzling Brownie Treat</h3>
+              <p>Hot brownie with ice cream on a sizzler plate.</p>
+            </div>
+
+            <div class="menu-card">
+              <img src="assests/dessert8.jpg" alt="Dessert">
+              <h3>Oreo Cream Jar</h3>
+              <p>Creamy Oreo-flavoured ice cream served in a mini jar.</p>
+            </div>
+
+          </div>
+    </section>
+
+    <section class="menu-section" id="drinks">
+        <h2>Drinks</h2>
+        <p class="tagline">-"Sip, Savour, Repeat- Quench Your Thirst with Our Refreshing Beverages🍹!"</p>
+        <div class="menu-grid">
+            <!-- Menu items here -->
+
+            <div class="menu-card">
+              <img src="assests/drink1.jpg" alt="Drink">
+              <h3>Mint Mojito Magic</h3>
+              <p>Refreshing mint, lime & soda cooler.</p>
+            </div>
+
+            <div class="menu-card">
+              <img src="assests/drink2.jpg" alt="Drink">
+              <h3>Icy Cold Coffee </h3>
+              <p>Chilled coffee blended with cream.</p>
+            </div>
+
+            <div class="menu-card">
+              <img src="assests/drink3.jpg" alt="Drink">
+              <h3>Fresh Lemonade Zing</h3>
+              <p>Citrus lemonade with a burst of freshness.</p>
+            </div>
+
+            <div class="menu-card">
+              <img src="assests/drink4.jpg" alt="Drink">
+              <h3>virgin Pina Colada</h3>
+              <p>Pineapple & coconut mocktail for a tropical twist.</p>
+            </div>
+
+            <div class="menu-card">
+              <img src="assests/drink5.jpg" alt="Drink">
+              <h3>watermelon cooler</h3>
+              <p>Chilled watermelon juice with a hint of mint.</p>
+            </div>
+
+            <div class="menu-card">
+              <img src="assests/drink6.jpg" alt="Drink">
+              <h3>Strawberry Shake Bliss</h3>
+              <p>Creamy strawberry milkshake topped with whipped cream.</p>
+            </div>
+
+            <div class="menu-card">
+              <img src="assests/drink7.jpg" alt="Drink">
+              <h3>Blue Lagoon Fizz</h3>
+              <p>Vibrant blue mocktail with lemon & soda.</p>
+            </div>
+
+            <div class="menu-card">
+              <img src="assests/drink8.jpg" alt="Drink">
+              <h3>Classic Masala Chaas</h3>
+              <p>Spicy buttermilk with roasted cumin & mint.</p>
+            </div>
+
+       </div>
+    </section>
+
+    <section class="menu-section" id="chefs-special">
+        <h2>Chef’s Special</h2>
+        <p class="tagline">-"Chef’s Masterpieces- A Symphony of Flavours🧑🏻‍🍳!"</p>
+        <div class="menu-grid">
+            <!-- Special Dishes -->
+            <div class="menu-card">
+              <img src="assests/chefspecial1.jpg" alt="chef special">
+              <h3>Paneer Peri-Peri Volcano</h3>
+              <p>Spicy paneer chunks coated in fiery peri peri sauce, served on a sizzler plate,with lava cheese drizzle.</p>
+            </div>
+
+            <div class="menu-card">
+              <img src="assests/chefspecial2.jpg" alt="chef special">
+              <h3>Saffron Rose Pasta</h3>
+              <p>Creamy pasta infused with saffron and a hint of rose, garnished with nuts and edible petals.</p>
+            </div>
+
+            <div class="menu-card">
+              <img src="assests/chefspecial3.jpg" alt="chef special">
+              <h3>Choco Paan Bombs</h3>
+              <p>Mini paan-flavour chocolate bombs with a gooey gulkand & choco center.</p>
+            </div>
+
+            <div class="menu-card">
+              <img src="assests/chefspecial4.jpg" alt="Drink">
+              <h3>Tandoori Broccoli Pops</h3>
+              <p>Broccoli florets marinated in spiced yogurt, char-grilled, served with mint chutney shots.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="menu-section" id="signature-section">
+      <h2>Signature Dishes</h2>
+      <p class="tagline">-"Signature Creation- The Heart of Bhook Buster🤎!"</p>
+      <div class="menu-grid">
+          <!-- Special Dishes -->
+          <div class="menu-card">
+            <img src="assests/signaturedish1.jpg" alt="Burj Khalifa Dosa">
+            <h3>Burj Khalifa Dosa</h3>
+            <p>Towering, ultra-thin crispy dosa, rolled sky-high, served with an assortment of chutneys and special spicy sambar.</p>
+          </div>
+
+          <div class="menu-card">
+            <img src="assests/signaturedish2.jpg" alt="Bhook buster bahubali thali">
+            <h3>Bhook Buster Bahubali Thali</h3>
+            <p>A king-sized Feast featuring a grand spread of curries, naans, biryani, and starters-crafted for the truly hungry!</p>
+          </div>
+
+          <div class="menu-card">
+            <img src="assests/signaturedish3.jpg" alt="Bhook Buster Special Chinese Platter">
+            <h3>Bhook Buster Special Chinese Platter</h3>
+            <p>A sizzling platter loaded with crispy spring rolls, chilli paneer, noodles, manchurian, and spicy dips-perfect for sharing!</p>
+          </div>
+
+          <div class="menu-card">
+            <img src="assests/signaturedish4.jpg" alt="chocolate Avalanche Dessert">
+            <h3>Chocolate Avalanche Dessert</h3>
+            <p>A Dessert mountain of brownies, waffles, ice cream, and molten chocolate-served sizzling with a dramatic chocolate pour!</p>
+          </div>
+
+      </div>
+  </section>
+
+  <section class="menu-section id="closing-note">
+    <!-- Closing Note -->
+    <div class="menu-closing-note">
+        <p>This is just a glimpse of the flavour we offer! Our full spread awaits you at bhook busters.Our chef love surprising you with new delights every day.Ready to satisfy your Bhook? Visit Bhook Busters and let your taste buds explore the full journey🤎!</p>
+    </div>
+  </section>
+    
+
+  <!-- Footer Section -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-section about">
+        <h3>Bhook Busters</h3>
+        <p>Your ultimate food destination. Serving flavors that burst with happiness!</p>
+      </div>
+
+      <div class="footer-section contact">
+        <h3>Contact Us</h3>
+        <p>Email: contact@bhookbusters.com</p>
+        <p>Phone: +91 96670xxxxx</p>
+        <p>Location: XYZ Street, Your City</p>
+      </div>
+
+      <div class="footer-section quick-links">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html#home">Home</a></li>
+          <li><a href="index.html#about">About Us</a></li>
+          <li><a href="index.html#menu">Menu</a></li>
+          <li><a href="index.html#contact">Contact Us</a></li>
+          <li><a href="index.html#reservation">Reservation</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section social">
+        <h3>Follow Us</h3>
+        | <a href="#">Instagram</a> | <br> |
+        <a href="#">Facebook</a> | <br> |
+        <a href="#">Twitter</a> | <br> 
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Bhook Busters. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    // Smooth Scroll for Category Links
+document.querySelectorAll('.menu-categories a').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        target.scrollIntoView({ behavior: 'smooth' });
+    });
+});
+
+// Fade-in Animation on Scroll
+const sections = document.querySelectorAll('.menu-section');
+const options = {
+    threshold: 0.2,
+};
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.style.opacity = 1;
+            entry.target.style.transform = 'translateY(0)';
+        }
+    });
+}, options);
+
+sections.forEach(section => {
+    section.style.opacity = 0;
+    section.style.transform = 'translateY(40px)';
+    section.style.transition = 'opacity 0.8s ease-out, transform 0.8s ease-out';
+    observer.observe(section);
+});
+
+  </script>
+</body>
+</html>

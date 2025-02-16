@@ -14,7 +14,7 @@ hamburger.addEventListener("click" , () => {
 document.addEventListener("DOMContentLoaded", function () {
     const sections = document.querySelectorAll(".aboutus, .menu , .ambiance , .reservation-section, .customer-reviews , .contact , .host ");
 
-   if(sections.length > 0 ) function handleScroll() {
+   if(sections.length > 0 ) { function handleScroll() {
         sections.forEach((section) => {
             const sectionPosition = section.getBoundingClientRect().top;
             const screenPosition = window.innerHeight / 1.3;
@@ -29,6 +29,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Trigger animation when page loads
     handleScroll();
+    }
 });
 
   

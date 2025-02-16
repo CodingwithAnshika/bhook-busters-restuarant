@@ -529,7 +529,8 @@ header {
 
 .host{
   background-color: #fef6e4;
-  margin: 0 29px 40px29px ;
+  padding : 40px 2px 30px 2px; 
+  margin: 0 29px 40px 29px ;
   text-align: center;
   opacity: 0;
   transform: translateY(30px);
@@ -981,7 +982,7 @@ header {
   color: #fff;
   padding: 40px 0;
   text-align: center;
-  margin-top: 40px;
+  margin-top: 60px;
 }
 
 .footer-container {

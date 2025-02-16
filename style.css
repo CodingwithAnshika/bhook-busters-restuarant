@@ -374,6 +374,18 @@ header {
 }
 
 /* Ambiance Section Styling */
+
+.ambiance{
+   opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 1s ease-out 0.6s, transform 1s ease-out 0.6s;
+}
+
+.ambiance.visible{
+  opacity: 1;
+  transform: translateY(0);
+}
+
 #ambiance {
   padding: 50px 20px;
   font-family: Arial, sans-serif;

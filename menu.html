@@ -546,7 +546,7 @@ const observer = new IntersectionObserver((entries) => {
 sections.forEach(section => {
     section.style.opacity = 0;
     section.style.transform = 'translateY(40px)';
-    section.style.transition = 'opacity 0.8s ease-out, transform 0.8s ease-out';
+    section.style.transition = 'opacity 0.5s ease-out, transform 0.5s ease-out';
     observer.observe(section);
 });
 

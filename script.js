@@ -12,7 +12,7 @@ hamburger.addEventListener("click" , () => {
 
 // sections fadein on scroll
 document.addEventListener("DOMContentLoaded", function () {
-    const sections = document.querySelectorAll(".aboutus, .menu , .ambiance , .reservation-section,   .customer-reviews");
+    const sections = document.querySelectorAll(".aboutus, .menu , .ambiance , .reservation-section, .customer-reviews , .contact , .host ");
 
    if(sections.length > 0 ) function handleScroll() {
         sections.forEach((section) => {
